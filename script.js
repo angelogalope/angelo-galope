@@ -51,9 +51,7 @@ $(document).ready(function () {
 		(entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					stackGif.src = "assets/images/STACK.gif"; // Start the GIF animation
-				} else {
-					stackGif.src = "assets/images/STACK_static.png"; // Freeze the GIF
+					stackGif.src = "assets/images/stacks.gif"; // Start the GIF animation
 				}
 			});
 		},
