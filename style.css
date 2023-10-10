@@ -131,7 +131,7 @@ html {
 	}
 
 	#stack-desc {
-		font-size: 6px;
+		font-size: 8px;
 	}
 
 	#achievements, card-cont {
@@ -288,8 +288,11 @@ html {
 }
 
 #carouselExampleCaptions {
-    max-width: 600px; /* Adjust the width as needed */
-    max-height: 500px; /* Adjust the height as needed */
-    margin: 0 auto; /* Center the carousel horizontally */
-    position: static;
+    max-width: 600px;
+    max-height: 500px;
+    margin: 0 auto;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+	color: rgb(0, 0, 0); /* Change this to the desired color */
   }
