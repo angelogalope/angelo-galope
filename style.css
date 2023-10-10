@@ -110,6 +110,10 @@ html {
 	}
 }
 
+#greeting {
+	font-size: 20px;
+}
+
 @media screen and (max-width: 768px) {
     #sliced-me, #stack-gif {
         width: 302px; /* Make the image responsive, filling the container width */
@@ -125,6 +129,22 @@ html {
 	#quote-content, .pass, .enth, .det {
         font-size: 18px;
     }
+
+	#greeting {
+		font-size: 16px;
+	}
+
+	#name {
+		font-size: 18px;
+	}
+
+	#desc {
+		font-size: 12px;
+	}
+
+	#program {
+		font-size: 26px;
+	}
 
 	#tech-stack, #achievements {
 		font-size: 1.5rem;
