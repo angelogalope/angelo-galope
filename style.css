@@ -1,0 +1,202 @@
+#sect2,
+nav {
+	font-family: "IBM Plex Mono", monospace;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+	width: 4px; /* Set the width of the scroll bar */
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #333; /* Set the color of the scroll thumb */
+	border-radius: 40px;
+}
+
+.reveal {
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 1.5s all ease;
+}
+
+.reveal.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.navbar-nav {
+	font-weight: bold;
+}
+
+.nav-link {
+	position: relative;
+	text-decoration: none;
+}
+
+.nav-link::before,
+.nav-link::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	bottom: 0;
+	background-color: #ffffff; /* Change this to your desired underline color */
+	transition: width 0.3s ease-in-out;
+}
+
+.nav-link::before {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.nav-link::after {
+	right: 50%;
+	transform: translateX(50%);
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+	width: 50%;
+}
+
+#quote-content,
+#logo,
+#ul-list {
+	animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.sect1, #tech-stack {
+	height: 70px;
+	font-family: "Dela Gothic One", Arial;
+}
+
+.barrier-tape {
+	height: 80px;
+	background: repeating-linear-gradient(
+		45deg,
+		#ffcc00,
+		#ffcc00 40px,
+		#000000 40px,
+		#000000 60px
+	);
+	position: relative;
+	animation: tape-animation 5s linear infinite;
+}
+
+@keyframes tape-animation {
+	to {
+		background-position: 100% 0;
+	}
+}
+
+@keyframes tape-animation {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 1000px 0;
+	}
+}
+
+.pass,
+.enth,
+.det {
+	background-image: linear-gradient(to right, #ffcc00, blue); 
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	text-shadow: 0 0 4px rgba(248, 248, 248, 0.788);
+}
+
+.designer[data-translate],
+.coder[data-translate] {
+	font-weight: bolder;
+	font-family: "IBM Plex Mono", monospace;
+}
+
+/* Define the keyframes for the glitch effect */
+@keyframes glitch {
+	0% {
+		text-shadow: 0 0 0 transparent, 5px 5px 0 #ff0000, -5px -5px 0 #0000ff;
+	}
+	5% {
+		text-shadow: 0 0 0 transparent, 5px 5px 0 #0000ff, -5px -5px 0 #ffcc00;
+	}
+	10% {
+		text-shadow: 0 0 0 transparent, 5px 5px 0 #ff0000, -5px -5px 0 #0000ff;
+	}
+}
+
+.designer,
+.coder {
+	animation: glitch 3s linear infinite reverse;
+}
+
+#about {
+	height: 620px;
+}
+
+#quote {
+	font-family: "Dela Gothic One", monospace;
+}
+
+#desc, #stack-desc {
+	font-family: "IBM Plex Mono", monospace;
+}
+
+#program {
+	overflow: hidden;
+	border-right: 2px solid #ffffff;
+	white-space: nowrap;
+	margin: 0;
+}
+
+.techno {
+    color: #ffcc00;
+}
+
+.typewriter {
+    color: #0000ff;
+	width: 0;
+	animation: typing 2s steps(30) forwards, blink-caret 0.1s step-end 3s infinite;
+}
+
+@keyframes typing {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-right-color: transparent;
+	}
+	50% {
+		border-right-color: #000;
+	}
+}
+
+#carouselExampleCaptions {
+    max-width: 600px; /* Adjust the width as needed */
+    max-height: 500px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+    position: static;
+  }
