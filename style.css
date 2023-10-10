@@ -123,15 +123,15 @@ html {
 	}
 
 	#quote-content, .pass, .enth, .det {
-        font-size: 1.0rem;
+        font-size: 18px;
     }
 
 	#tech-stack, #achievements {
 		font-size: 1.5rem;
 	}
 
-	#stack-desk {
-		font-size: small;
+	#stack-desc {
+		font-size: 6px;
 	}
 
 	#achievements, card-cont {
