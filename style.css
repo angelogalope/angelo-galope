@@ -116,7 +116,7 @@ html {
 
 @media screen and (max-width: 768px) {
     #sliced-me, #stack-gif {
-        width: 302px; /* Make the image responsive, filling the container width */
+        width: 270px; /* Make the image responsive, filling the container width */
         height: auto; /* Automatically adjust the height to maintain aspect ratio */
         /* Add any other styles you want for smaller screens */
     }
@@ -131,19 +131,19 @@ html {
     }
 
 	#greeting {
-		font-size: 16px;
-	}
-
-	#name {
-		font-size: 18px;
-	}
-
-	#desc {
 		font-size: 12px;
 	}
 
+	#name {
+		font-size: 15px;
+	}
+
+	#desc {
+		font-size: 13px;
+	}
+
 	#program {
-		font-size: 26px;
+		font-size: 23px;
 	}
 
 	#tech-stack, #achievements {
