@@ -114,6 +114,10 @@ html {
 	font-size: 20px;
 }
 
+#name {
+	font-size: 24px;
+}
+
 @media screen and (max-width: 768px) {
     #sliced-me, #stack-gif {
         width: 270px; /* Make the image responsive, filling the container width */
