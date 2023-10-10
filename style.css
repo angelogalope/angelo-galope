@@ -65,7 +65,7 @@ html {
 	width: 50%;
 }
 
-#landing, .navbar, #sect2, #about, #achievements {
+#landing, .navbar, #nav-btn, #sect2, #about, #achievements, #contact {
 	background-color: #0e0e0e;
 }
 
@@ -167,6 +167,11 @@ html {
 		width: 302px;
 	}
 
+	#parago-card {
+		height: 368px;
+		width: 302px;
+	}
+
 	.card-title {
 		font-size: 1.2rem;
 	}
@@ -174,6 +179,28 @@ html {
 	.card-text {
 		font-size: 0.9rem;
 	}
+
+	#contact-me {
+		width: 132px;
+		height: 132px;
+	}
+
+	.btn-lg {
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+	}
+
+	#contact-img {
+		/* Adjust the image width for smaller screens */
+		width: 100%; /* Make the image fill the container width */
+		max-width: none; /* Remove the maximum width restriction */
+		height: auto; /* Maintain the image's aspect ratio */
+	}
+
+	.btn {
+		width: 22px;
+	}
+
 }
 
 .card {
@@ -182,9 +209,8 @@ html {
 }
 
 .card:hover {
-	/* Add your hover styles here */
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Example: adding a box shadow */
-	transform: scale(1.02); /* Example: scaling up the card */
+	box-shadow: 0 0 14px rgba(255, 255, 255, 0.5);
+	transform: scale(1.02);
 }
 
 #tech-stack {
@@ -261,7 +287,7 @@ html {
 	height: 620px;
 }
 
-#quote-span1 {
+#quote-span1, #contact-me {
 	font-family: "Dela Gothic One", monospace;
 }
 
@@ -320,3 +346,18 @@ html {
   .carousel-control-prev-icon, .carousel-control-next-icon {
 	color: rgb(0, 0, 0); /* Change this to the desired color */
   }
+
+  #socials, #email {
+	text-decoration: none;
+  }
+
+  .btn {
+	width: 162px;
+  }
+
+  #contact-img {
+	width: 432px;
+	height: 432px;
+	max-width: 100%; /* Ensure the image doesn't exceed its container */
+	height: auto; /* Maintain the image's aspect ratio */
+}
