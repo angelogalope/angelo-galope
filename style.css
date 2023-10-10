@@ -90,6 +90,11 @@ html {
 		width: 282px;
 		height: auto;
 	}
+
+	#quote-content {
+        font-size: 1.0rem; /* Adjust the font size for smaller screens */
+        /* Add any other styles you want for smaller screens */
+    }
 }
 
 /* Default styles for the carousel container */
