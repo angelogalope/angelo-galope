@@ -147,7 +147,7 @@ html {
 	}
 
 	#program {
-		font-size: 23px;
+		font-size: 22.5px;
 	}
 
 	#tech-stack, #achievements {
@@ -159,7 +159,7 @@ html {
 	}
 
 	#achievements, card-cont {
-		padding-top: 100px; /* Adjust this value as needed */
+		padding-top: 100px;
 	  }
 
 	.card {
