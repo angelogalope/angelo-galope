@@ -200,12 +200,47 @@ html {
 	font-size: 24px;
 }
 
+@media screen and (max-width: 414px) {
+	#aboutme {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	#recipeCarousel, .carousel-inner {
+		width: 552px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	#aboutme {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 912px) {
+	#aboutme {
+		flex-direction: column;
+	}
+}
+
 @media screen and (max-width: 768px) {
+	#aboutme {
+		flex-direction: row;
+	}
+
     #sliced-me, #stack-gif {
-        width: 270px; /* Make the image responsive, filling the container width */
-        height: auto; /* Automatically adjust the height to maintain aspect ratio */
-        /* Add any other styles you want for smaller screens */
+        width: 270px;
+        height: auto;
     }
+
+	.designer, .coder {
+		font-size: large;
+	}
+
+	.designer-desc, .coder-desc {
+		font-size: 12px;
+	}
 
 	#me {
 		width: 242px;
@@ -242,6 +277,14 @@ html {
 
 	#stack-desc {
 		font-size: 8px;
+	}
+
+	.proj-card-title {
+		font-size: 18px;
+	}
+
+	.card-desc {
+		font-size: 12px;
 	}
 
 	#achievements, card-cont {
@@ -502,3 +545,8 @@ html {
 .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
 }
+
+#socials a {
+    text-decoration: none;
+    color: inherit;
+  }
