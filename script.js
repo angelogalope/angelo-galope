@@ -59,4 +59,32 @@ $(document).ready(function () {
 	); // Adjust the threshold as needed
 
 	observer.observe(stackGif);
+
+	$(document).ready(function() {
+		$('#recipeCarousel').on('slid.bs.carousel', function (e) {
+			// Add animations or other actions after slide transition if needed
+		});
+	});
+
+	$('#recipeCarousel').carousel({
+		interval: 10000
+	  })
+	  
+	  $('.carousel .carousel-item').each(function(){
+		  var minPerSlide = 3;
+		  var next = $(this).next();
+		  if (!next.length) {
+		  next = $(this).siblings(':first');
+		  }
+		  next.children(':first-child').clone().appendTo($(this));
+		  
+		  for (var i=0;i<minPerSlide;i++) {
+			  next=next.next();
+			  if (!next.length) {
+				  next = $(this).siblings(':first');
+				}
+			  
+			  next.children(':first-child').clone().appendTo($(this));
+			}
+	  });
 });

@@ -70,7 +70,7 @@ html {
 	width: 50%;
 }
 
-#landing, .navbar, #nav-btn, #sect2, #about, #achievements, #contact {
+#landing, .navbar, #nav-btn, #sect2, #about, #engagements, #achievements, #contact {
 	background-color: #0e0e0e;
 }
 
@@ -272,17 +272,10 @@ html {
 		padding: 0.5rem 1rem;
 	}
 
-	#contact-img {
-		/* Adjust the image width for smaller screens */
-		width: 100%; /* Make the image fill the container width */
-		max-width: none; /* Remove the maximum width restriction */
-		height: auto; /* Maintain the image's aspect ratio */
-	}
-
 	.btn {
-		width: 22px;
-	}
+		width: 12px;
 
+	}
 }
 
 .card {
@@ -426,7 +419,7 @@ html {
   }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
-	color: rgb(0, 0, 0); /* Change this to the desired color */
+	color: rgb(0, 0, 0);
   }
 
   #socials, #email {
@@ -440,6 +433,73 @@ html {
   #contact-img {
 	width: 432px;
 	height: 432px;
-	max-width: 100%; /* Ensure the image doesn't exceed its container */
-	height: auto; /* Maintain the image's aspect ratio */
+}
+
+.carousel-inner .carousel-item {
+	transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+	
+	#recipeCarousel, .carousel-inner {
+		height: 220px;
+	}
+
+	.btn-lg {
+		font-size: 16px;
+		width: 150px;
+	}
+
+	.bi {
+		width: 18px;
+		height: 18px;
+	}
+
+
+	#contact-img {
+		margin-top: 15px;
+		width: 310px;
+		height: 310px;
+	}
+
+	.footer-logo {
+		width: 18px;
+		height: 18px;
+	}
+
+	.credits {
+		font-size: 12px;
+	}
+
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
 }
