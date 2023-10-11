@@ -262,11 +262,6 @@ html {
 		font-size: 0.9rem;
 	}
 
-	#contact-me {
-		width: 132px;
-		height: 132px;
-	}
-
 	.btn-lg {
 		font-size: 1rem;
 		padding: 0.5rem 1rem;
@@ -422,10 +417,6 @@ html {
 	color: rgb(0, 0, 0);
   }
 
-  #socials, #email {
-	text-decoration: none;
-  }
-
   .btn {
 	width: 162px;
   }
@@ -449,6 +440,7 @@ html {
 	
 	#recipeCarousel, .carousel-inner {
 		height: 220px;
+		width: 310px;
 	}
 
 	.btn-lg {
@@ -461,6 +453,9 @@ html {
 		height: 18px;
 	}
 
+	.socials {
+		flex-direction: row;
+	}
 
 	#contact-img {
 		width: 120px;
@@ -496,6 +491,7 @@ html {
     .carousel-inner .carousel-item-prev {
       transform: translateX(-33.333%);
     }
+
 }
 
 .carousel-inner .carousel-item-right,
