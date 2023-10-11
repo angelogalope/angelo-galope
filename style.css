@@ -206,12 +206,6 @@ html {
 	text-shadow: 0 0 20px #fff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff;
 }
 
-@media screen and (max-width: 414px) {
-	#aboutme {
-		flex-direction: column;
-	}
-}
-
 @media screen and (max-width: 540px) {
 	#recipeCarousel, .carousel-inner {
 		width: 552px;
@@ -270,7 +264,7 @@ html {
 	}
 
 	#program {
-		font-size: 22.5px;
+		font-size: 18px;
 	}
 
 	#cvbtn, #certbtn {
@@ -324,6 +318,7 @@ html {
 		width: 12px;
 
 	}
+	
 }
 
 .card {
@@ -435,7 +430,6 @@ html {
 }
 
 .typewriter {
-	
     color: #0000ff;
 	width: 0;
 	animation: typing 2s steps(30) forwards, blink-caret 0.1s step-end 3s infinite;
@@ -447,6 +441,66 @@ html {
 	}
 	100% {
 		width: 90%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	@keyframes typing {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 75%;
+		}
+	}
+
+	#about-inner {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	@keyframes typing {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 75%;
+		}
+	}
+
+	#about-inner {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	@keyframes typing {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 55%;
+		}
+	}
+
+	#about-inner {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 912px) {
+	@keyframes typing {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 63%;
+		}
+	}
+
+	#about-inner {
+		flex-direction: column;
 	}
 }
 
