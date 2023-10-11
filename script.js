@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	// Select all <h1> elements with a data-translate attribute
 	$("h1[data-translate]").each(function () {
 		var $element = $(this);
 		var translation = $element.data("translate");
@@ -17,6 +16,8 @@ $(document).ready(function () {
 
 		setInterval(toggleText, 3000);
 	});
+
+	
 
 	const typewriter = document.querySelector(".typewriter");
 	typewriter.addEventListener("animationiteration", () => {
@@ -56,13 +57,12 @@ $(document).ready(function () {
 			});
 		},
 		{ threshold: 0.05 }
-	); // Adjust the threshold as needed
+	);
 
 	observer.observe(stackGif);
 
 	$(document).ready(function() {
 		$('#recipeCarousel').on('slid.bs.carousel', function (e) {
-			// Add animations or other actions after slide transition if needed
 		});
 	});
 
@@ -88,3 +88,6 @@ $(document).ready(function () {
 			}
 	  });
 });
+
+
+

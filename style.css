@@ -200,6 +200,12 @@ html {
 	font-size: 24px;
 }
 
+#cvbtn:hover, #certbtn:hover {
+	transform: scale(1.05);
+	transition: transform .3s ease-in;
+	text-shadow: 0 0 20px #fff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff;
+}
+
 @media screen and (max-width: 414px) {
 	#aboutme {
 		flex-direction: column;
