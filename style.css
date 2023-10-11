@@ -212,8 +212,8 @@ html {
 		height: auto;
 	}
 
-	#quote-content, .pass, .enth, .det {
-        font-size: 18px;
+	#quote-content {
+        font-size: 26px;
     }
 
 	#greeting {
@@ -230,6 +230,10 @@ html {
 
 	#program {
 		font-size: 22.5px;
+	}
+
+	#cvbtn, #certbtn {
+		width: 132px;
 	}
 
 	#tech-stack, #achievements {
